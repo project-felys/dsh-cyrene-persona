@@ -1,0 +1,29 @@
+{
+  "name": "@local/cyrene-persona",
+  "version": "1.0.3",
+  "private": true,
+  "type": "module",
+  "description": "Injects the Cyrene (昔涟) persona into every DeepSeek Harness system prompt",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png"
+  },
+  "files": [
+    "index.js",
+    "framing.md",
+    "card.md",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.png",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
